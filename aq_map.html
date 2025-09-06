@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_902ce10bc39e7a88df4d44b5cfa6bb6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_902ce10bc39e7a88df4d44b5cfa6bb6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_902ce10bc39e7a88df4d44b5cfa6bb6f = L.map(
+                "map_902ce10bc39e7a88df4d44b5cfa6bb6f",
+                {
+                    center: [6.5, 8.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_96bafc5ea8e03f9ae2bf594ca473cba8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_96bafc5ea8e03f9ae2bf594ca473cba8.addTo(map_902ce10bc39e7a88df4d44b5cfa6bb6f);
+        
+    
+            var marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_01351a6b9e9c5d2927dac39667a55ef4 = L.circleMarker(
+                [6.066, 8.34],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_b8727fd1a4e6732a3221b9361b20ea3e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2add405450d48408ac6f6d74c58084f9 = $(`<div id="html_2add405450d48408ac6f6d74c58084f9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>Ogada, Obubra Local Government Area (LGA)</b><br>       <small>Africa/Lagos</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>0.0</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_b8727fd1a4e6732a3221b9361b20ea3e.setContent(html_2add405450d48408ac6f6d74c58084f9);
+            
+        
+
+        circle_marker_01351a6b9e9c5d2927dac39667a55ef4.bindPopup(popup_b8727fd1a4e6732a3221b9361b20ea3e)
+        ;
+
+        
+    
+    
+            var circle_marker_6ae69a91cffab345d0371871dca6f1e2 = L.circleMarker(
+                [-0.2674, 36.0218],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_1cf6ff953903cda08a35d930916381cc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d946e25a0c60fa3d58f5c80a88d63d30 = $(`<div id="html_d946e25a0c60fa3d58f5c80a88d63d30" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>Nakuru</b><br>       <small>Africa/Nairobi</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>4.11</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_1cf6ff953903cda08a35d930916381cc.setContent(html_d946e25a0c60fa3d58f5c80a88d63d30);
+            
+        
+
+        circle_marker_6ae69a91cffab345d0371871dca6f1e2.bindPopup(popup_1cf6ff953903cda08a35d930916381cc)
+        ;
+
+        
+    
+    
+            var circle_marker_0e9621538fc186d7109fc2853c5d4256 = L.circleMarker(
+                [5.02529, 8.34843],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_ac2afeb3af0826cafaabce525b4642f9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d775d29c764ab0f24173f82732c36cf3 = $(`<div id="html_d775d29c764ab0f24173f82732c36cf3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>Calabar</b><br>       <small>Africa/Lagos</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>16.66</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_ac2afeb3af0826cafaabce525b4642f9.setContent(html_d775d29c764ab0f24173f82732c36cf3);
+            
+        
+
+        circle_marker_0e9621538fc186d7109fc2853c5d4256.bindPopup(popup_ac2afeb3af0826cafaabce525b4642f9)
+        ;
+
+        
+    
+    
+            var circle_marker_dfaa3ea7081240d2b5e1a3b9ba2c45ba = L.circleMarker(
+                [-1.33159, 36.91271],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_75e1a2043d667da1bca76747433063bf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_30b4649f1d31f5227184338e18789c57 = $(`<div id="html_30b4649f1d31f5227184338e18789c57" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>Nairobi</b><br>       <small>Africa/Nairobi</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>19.31</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_75e1a2043d667da1bca76747433063bf.setContent(html_30b4649f1d31f5227184338e18789c57);
+            
+        
+
+        circle_marker_dfaa3ea7081240d2b5e1a3b9ba2c45ba.bindPopup(popup_75e1a2043d667da1bca76747433063bf)
+        ;
+
+        
+    
+    
+            var circle_marker_3580a351a9bea437dc91f8070213913e = L.circleMarker(
+                [-25.68150602774, 28.15608532172389],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_0c9ecd68a400cce1d572cb5c49c9cecb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_299c72244a742b86d14efac92bdd1705 = $(`<div id="html_299c72244a742b86d14efac92bdd1705" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>PTA-NORTH</b><br>       <small>Africa/Johannesburg</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>35.93466663360596</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_0c9ecd68a400cce1d572cb5c49c9cecb.setContent(html_299c72244a742b86d14efac92bdd1705);
+            
+        
+
+        circle_marker_3580a351a9bea437dc91f8070213913e.bindPopup(popup_0c9ecd68a400cce1d572cb5c49c9cecb)
+        ;
+
+        
+    
+    
+            var circle_marker_efe5fe31ab7b6f098e8a9b21662d52d9 = L.circleMarker(
+                [14.6662527, 17.4417451],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_9e78c0961099c608e379b8df389585e8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_07d707c9917e0bc6732f2d22b80d002f = $(`<div id="html_07d707c9917e0bc6732f2d22b80d002f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>Dakar Plateau </b><br>       <small>Africa/Ndjamena</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>4.756291667620341</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_9e78c0961099c608e379b8df389585e8.setContent(html_07d707c9917e0bc6732f2d22b80d002f);
+            
+        
+
+        circle_marker_efe5fe31ab7b6f098e8a9b21662d52d9.bindPopup(popup_9e78c0961099c608e379b8df389585e8)
+        ;
+
+        
+    
+    
+            var circle_marker_912e1c3ffd814acaf4a7e92ab8e87f58 = L.circleMarker(
+                [5.329, -3.949],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_9f3651cf6e6cc632144bb27289d9143e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f46eed079eb10618fab4bfac3506a408 = $(`<div id="html_f46eed079eb10618fab4bfac3506a408" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>Nouvelle Pharmacie M'Pouto</b><br>       <small>Africa/Abidjan</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>7.0</td></tr>         <tr><td><b>PM10</b></td><td>26.0</td></tr>         <tr><td><b>NO2</b></td><td>27.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_9f3651cf6e6cc632144bb27289d9143e.setContent(html_f46eed079eb10618fab4bfac3506a408);
+            
+        
+
+        circle_marker_912e1c3ffd814acaf4a7e92ab8e87f58.bindPopup(popup_9f3651cf6e6cc632144bb27289d9143e)
+        ;
+
+        
+    
+    
+            var circle_marker_caf94f0d7ac0f4ca7b91ab9126c65f07 = L.circleMarker(
+                [5.7045807, -0.0102789],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_ce4a4388eb0b030a371a83672ba507ba = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c56a0ce5bbf233cdcd901b7d99cfa523 = $(`<div id="html_c56a0ce5bbf233cdcd901b7d99cfa523" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>Divine healer's Church, Bethlehem</b><br>       <small>Africa/Accra</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>37.90000009536743</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_ce4a4388eb0b030a371a83672ba507ba.setContent(html_c56a0ce5bbf233cdcd901b7d99cfa523);
+            
+        
+
+        circle_marker_caf94f0d7ac0f4ca7b91ab9126c65f07.bindPopup(popup_ce4a4388eb0b030a371a83672ba507ba)
+        ;
+
+        
+    
+    
+            var circle_marker_aff49ccff7b6e8b7c35c22aea27d0d06 = L.circleMarker(
+                [14.767122, -16.943925],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_e7ec64dd429210b1bde05095b3322565 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5c629e40b12a1f8cddf0490c4c4497cf = $(`<div id="html_5c629e40b12a1f8cddf0490c4c4497cf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>SunuAir </b><br>       <small>Africa/Dakar</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>5.97279171148936</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_e7ec64dd429210b1bde05095b3322565.setContent(html_5c629e40b12a1f8cddf0490c4c4497cf);
+            
+        
+
+        circle_marker_aff49ccff7b6e8b7c35c22aea27d0d06.bindPopup(popup_e7ec64dd429210b1bde05095b3322565)
+        ;
+
+        
+    
+    
+            var circle_marker_e8d83941372ee384a60e3b5a6965522f = L.circleMarker(
+                [9.058498, 38.761641],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5);
+        
+    
+        var popup_0b33b5a5e128cec22b29157033c2578d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7ffd237b54cbd1016e755e62c18d25cf = $(`<div id="html_7ffd237b54cbd1016e755e62c18d25cf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; font-size:12px; max-width:300px;">       <b>Addis Ababa Central</b><br>       <small>Africa/Addis_Ababa</small>       <hr style="margin:6px 0">       <table style="font-size:12px;">         <tr><td><b>PM2.5</b></td><td>23.0</td></tr>         <tr><td><b>PM10</b></td><td>0.0</td></tr>         <tr><td><b>NO2</b></td><td>0.0</td></tr>         <!-- add more rows as desired -->       </table>     </div>     </div>`)[0];
+                popup_0b33b5a5e128cec22b29157033c2578d.setContent(html_7ffd237b54cbd1016e755e62c18d25cf);
+            
+        
+
+        circle_marker_e8d83941372ee384a60e3b5a6965522f.bindPopup(popup_0b33b5a5e128cec22b29157033c2578d)
+        ;
+
+        
+    
+    
+            marker_cluster_f7e8ec7e57e2180d8a2fdcd5587e45f5.addTo(map_902ce10bc39e7a88df4d44b5cfa6bb6f);
+        
+</script>
+</html>
